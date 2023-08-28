@@ -34,14 +34,15 @@
   }
 
   .profile-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px; /* Adjust the max-width to your preference */
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
 
   .profile-picture {
     width: 100px;
@@ -68,6 +69,42 @@
     font-size: 0.8em;
     color: #555;
     margin: 0;
+  }
+
+  /* Achievements Section */
+  .achievements-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .achievements-section h3 {
+    font-family: "Courier New", monospace;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .achievements-list li {
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .achievements-list li::before {
+    content: "\2022"; /* Bullet point */
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 10px;
   }
 
   .social-links {
@@ -129,6 +166,21 @@
     color: #888;
     font-size: 0.8em;
   }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .achievements-section {
+      padding: 10px;
+    }
+    
+    .achievements-section h3 {
+      font-size: 1em;
+    }
+    
+    .achievements-list li {
+      font-size: 0.8em;
+    }
+  }
 </style>
 </head>
 <body>
@@ -141,6 +193,16 @@
     <h2 class="profile-name">Team Riyadh</h2>
     <p class="profile-title">tickling your taste bud</p>
     <p class="profile-description">Please we need your vote!</p>
+    <!-- Achievements Section -->
+    <div class="achievements-section">
+      <h3>Achievements</h3>
+      <ul class="achievements-list">
+        <li>1st Place in Food Network Cooking Contest (2022)</li>
+        <li>Best Dish Award in Regional Cooking Competition (2021)</li>
+        <li>Featured in "Taste of the Town" TV Show</li>
+        <!-- Add more achievements as needed -->
+      </ul>
+    </div>
  <div class="social-links">
 
     <div class="social-vote-button">
